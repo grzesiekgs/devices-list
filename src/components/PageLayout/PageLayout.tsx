@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import Head from 'next/head';
 import getConfig from 'next/config';
-import Styles from './PageLayout.module.scss';
+import Styles from './pageLayout.module.scss';
 
 const {
   publicRuntimeConfig: {
