@@ -20,7 +20,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "typeRoots": ["./node_modules/@types", "./@types"],
+    "typeRoots": ["./node_modules/@types", "types"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "isolatedModules": true
   },

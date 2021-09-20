@@ -1,0 +1,178 @@
+{
+  "devices": [
+    {
+      "deviceName": "500291A5CA24",
+      "otaVersion": "0.11.0",
+      "batteryLevel": 0.5553082858814912,
+      "batteryVoltage": 3.944024085998535,
+      "latestStatusAt": "2021-08-05T09:57:54.939132",
+      "aisle": "B1 - Indian/Ethnic Rice",
+      "latestImages": [
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T05:58:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T04:44:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-04T21:30:56"
+        }
+      ],
+      "configs": {
+        "imageQuality": 0.8,
+        "brightness": 0.9,
+        "wiFiSSID": "demo",
+        "wiFiAuth": 1,
+        "wiFiPass": "secretPass"
+      }
+    },
+    {
+      "deviceName": "500291A60F28",
+      "otaVersion": "0.11.0",
+      "batteryLevel": 0.6834565891939051,
+      "batteryVoltage": 4.161876201629639,
+      "latestStatusAt": "2021-08-05T10:02:16.149610",
+      "aisle": "B1 - Indian/Ethnic Rice",
+      "latestImages": [
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T05:58:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T04:44:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-04T21:30:56"
+        }
+      ],
+      "configs": {
+        "imageQuality": 0.8,
+        "brightness": 0.9,
+        "wiFiSSID": "demo",
+        "wiFiAuth": 1,
+        "wiFiPass": "secretPass"
+      }
+    },
+    {
+      "deviceName": "500291A633A0",
+      "otaVersion": "0.11.0",
+      "batteryLevel": 0.5650974722469554,
+      "batteryVoltage": 3.960665702819824,
+      "latestStatusAt": "2021-08-05T09:55:48.058481",
+      "aisle": "B1 - Indian/Ethnic Rice",
+      "latestImages": [
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T05:58:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T04:44:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-04T21:30:56"
+        }
+      ],
+      "configs": {
+        "imageQuality": 0.8,
+        "brightness": 0.9,
+        "wiFiSSID": "demo",
+        "wiFiAuth": 1,
+        "wiFiPass": "secretPass"
+      }
+    },
+    {
+      "deviceName": "500291A63400",
+      "otaVersion": "0.11.0",
+      "batteryLevel": 0.561537742614746,
+      "batteryVoltage": 3.9546141624450684,
+      "latestStatusAt": "2021-08-05T10:03:57.095415",
+      "aisle": "B2 - Asian/British/Portuguese/Oriental/Italian",
+      "latestImages": [
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T05:58:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T04:44:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-04T21:30:56"
+        }
+      ],
+      "configs": {
+        "imageQuality": 0.8,
+        "brightness": 0.9,
+        "wiFiSSID": "demo",
+        "wiFiAuth": 1,
+        "wiFiPass": "secretPass"
+      }
+    },
+    {
+      "deviceName": "500291A6356C",
+      "otaVersion": "0.11.0",
+      "batteryLevel": 0.5864555695477653,
+      "batteryVoltage": 3.996974468231201,
+      "latestStatusAt": "2021-08-05T09:48:29.481099",
+      "aisle": "B2 - Asian/British/Portuguese/Oriental/Italian",
+      "latestImages": [
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T05:58:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T04:44:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-04T21:30:56"
+        }
+      ],
+      "configs": {
+        "imageQuality": 0.8,
+        "brightness": 0.9,
+        "wiFiSSID": "demo",
+        "wiFiAuth": 1,
+        "wiFiPass": "secretPass"
+      }
+    },
+    {
+      "deviceName": "500291A63C64",
+      "otaVersion": "0.11.0",
+      "batteryLevel": 0.54551923976225,
+      "batteryVoltage": 3.927382707595825,
+      "latestStatusAt": "2021-08-05T09:53:37.629485",
+      "aisle": "B2 - Asian/British/Portuguese/Oriental/Italian",
+      "latestImages": [
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T05:58:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-05T04:44:01"
+        },
+        {
+          "imageUrl": "https://static.independent.co.uk/2021/07/21/16/newFile10.jpg?width=982&height=726&auto=webp&quality=75",
+          "detectedAt": "2021-08-04T21:30:56"
+        }
+      ],
+      "configs": {
+        "imageQuality": 0.8,
+        "brightness": 0.9,
+        "wiFiSSID": "demo",
+        "wiFiAuth": 1,
+        "wiFiPass": "secretPass"
+      }
+    }
+  ]
+}

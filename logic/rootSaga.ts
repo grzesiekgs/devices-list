@@ -1,6 +1,6 @@
 import { all, fork } from 'redux-saga/effects';
-import { appSaga } from 'logic/app/saga';
+import { devicesSaga } from './devices/saga';
 
 export default function* rootSaga() {
-  yield all([fork(appSaga)]);
+  yield all([fork(devicesSaga)]);
 }
