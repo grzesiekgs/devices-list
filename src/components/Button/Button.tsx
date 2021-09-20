@@ -1,13 +1,7 @@
-import React, { FunctionComponent, MouseEvent } from 'react';
+import React, { FunctionComponent } from 'react';
 import { joinClasses } from 'src/utils/classNames';
-import Styles from './button.module.scss';
-
-export type ButtonOnClick = (event: MouseEvent<HTMLButtonElement>) => void;
-
-export interface ButtonProps {
-  className?: string;
-  onClick?: ButtonOnClick;
-}
+import { ButtonProps } from './Button.types';
+import Styles from './Button.module.scss';
 
 export const Button: FunctionComponent<ButtonProps> = ({ className, onClick, children }) => (
   <button className={joinClasses(Styles.Button, className)} onClick={onClick}>
