@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FunctionComponent, useCallback, useEffect } from 'react';
+import React, { ChangeEvent, FunctionComponent, useCallback } from 'react';
 import { CheckboxProps } from './Checkbox.types';
 import Styles from './checkbox.module.scss';
 
@@ -12,15 +12,6 @@ export const Checkbox: FunctionComponent<CheckboxProps> = ({ label, checked, onC
     [onChange]
   );
 
-  useEffect(() => {
-    console.log('checkbox label update');
-  }, [label]);
-  useEffect(() => {
-    console.log('checkbox checked update');
-  }, [checked]);
-  useEffect(() => {
-    console.log('checkbox handler update');
-  }, [handleChange]);
   return (
     <label className={Styles.checkbox}>
       <input
@@ -30,7 +21,7 @@ export const Checkbox: FunctionComponent<CheckboxProps> = ({ label, checked, onC
         className={Styles.checkbox__input}
         onChange={handleChange}
       />
-      ;<span className={Styles.checkbox__label}>{label}</span>
+      <span className={Styles.checkbox__label}>{label}</span>
     </label>
   );
 };

@@ -1,2 +1,14 @@
+@import '~/src/styles/variables';
+
 .input {
+  box-sizing: border-box;
+  height: $inputs-height;
+  border: 0.0625rem solid $grey;
+  border-radius: 0.25rem;
+  padding: 0 0 0 0.25rem;
+  margin: $inputs-spacing;
+
+  &:focus {
+    outline-color: $grey;
+  }
 }

@@ -10,7 +10,12 @@ export const FiltersBar: FunctionComponent<FiltersBarProps> = ({ allAisles, filt
   return (
     <div className={Styles.filtersBar}>
       <Input value={filtersState.searchQuery} onChange={handleSearchQuery} />
-      <MultiSelect label={'Aisles'} items={allAisles} selected={filtersState.selectedAisles} onChange={handleAisles} />
+      <MultiSelect
+        label={'Select aisles'}
+        items={allAisles}
+        selected={filtersState.selectedAisles}
+        onChange={handleAisles}
+      />
       <Checkbox label={'Low battery'} checked={filtersState.lowBattery} onChange={handleLowBattery} />
     </div>
   );

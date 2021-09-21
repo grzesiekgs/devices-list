@@ -1,2 +1,21 @@
+@import '~/src/styles/variables';
+
 .checkbox {
+  display: flex;
+  align-items: center;
+  height: $inputs-height;
+  margin: $inputs-spacing;
+  cursor: pointer;
+
+  &__input {
+    margin: 0;
+  }
+
+  &__label {
+    margin-left: 0.5rem;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

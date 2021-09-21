@@ -1,0 +1,37 @@
+@import '~/src/styles/variables';
+
+.multiSelect {
+  position: relative;
+  height: $inputs-height;
+  margin: $inputs-spacing;
+
+  &__button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    border: 0.125rem solid $grey;
+    list-style: none;
+    background-color: $white;
+
+    &_open {
+      display: flex;
+    }
+  }
+
+  &__item {
+    border-bottom: 0.0625rem solid $grey-opaque;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}
