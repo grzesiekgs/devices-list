@@ -22,6 +22,18 @@ export interface IDevice {
   configs: IDeviceConfig;
 }
 
-export interface IDevicesResponse {
+export interface IDevicePost extends Pick<IDevice, 'deviceName' | 'aisle'> {}
+
+export interface IDevicesGetResponse {
   devices: IDevice[];
+}
+
+export interface IDevicePostResponse {
+  device: IDevice;
+}
+
+export interface DevicesFiltersState {
+  selectedAisles: string[];
+  searchQuery: string;
+  lowBattery: boolean;
 }

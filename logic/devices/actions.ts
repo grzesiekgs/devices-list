@@ -8,8 +8,8 @@ export const { Types: DevicesActionsTypes, Creators: DevicesActions } = createAc
   {
     fetchDevices: null,
     fetchDevicesSuccess: ['devices'],
-    postDevice: null,
-    postDeviceSuccess: ['device']
+    createDevice: ['device'],
+    createDeviceSuccess: ['device']
   },
   { prefix: 'DEVICES_' }
 );

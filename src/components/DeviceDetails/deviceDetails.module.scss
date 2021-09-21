@@ -1,0 +1,6 @@
+@import '~/src/styles/variables';
+
+.deviceDetails {
+  width: calc(#{$image-width-medium} + 2rem);
+  padding: 1rem;
+}

@@ -1,7 +1,7 @@
 import { ReduxWrapperHydrateAction } from 'logic/types';
 import { HYDRATE } from 'next-redux-wrapper';
 import { createReducer } from 'reduxsauce';
-import { DevicesMap, IFetchDevicesSuccessAction } from './types';
+import { DevicesMap, ICreateDeviceSuccessAction, IFetchDevicesSuccessAction } from './types';
 import { devicesInitialState } from './initialState';
 import { DevicesActionsTypes } from './actions';
 
@@ -23,5 +23,16 @@ export const devicesReducer = createReducer(devicesInitialState, {
       devicesIds
     };
   },
-  [DevicesActionsTypes.POST_DEVICE_SUCCESS]: (state /* action: IAddDeviceAction */) => state
+  [DevicesActionsTypes.CREATE_DEVICE_SUCCESS]: (state, { device }: ICreateDeviceSuccessAction) => {
+    const devicesIds = [...state.devicesIds, device.deviceName];
+    const devices = {
+      ...state.devices,
+      [device.deviceName]: device
+    };
+
+    return {
+      devices,
+      devicesIds
+    };
+  }
 });

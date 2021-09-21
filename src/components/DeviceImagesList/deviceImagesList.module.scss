@@ -1,0 +1,9 @@
+.deviceImagesList {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  &__image {
+    scroll-snap-align: center;
+  }
+}

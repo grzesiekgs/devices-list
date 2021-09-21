@@ -1,0 +1,20 @@
+@import '~/src/styles/variables';
+
+.deviceImage {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    object-fit: fill;
+
+    &_small {
+      width: $image-width-small;
+      height: $image-height-small;
+    }
+
+    &_medium {
+      width: $image-width-medium;
+      height: $image-height-medium;
+    }
+  }
+}

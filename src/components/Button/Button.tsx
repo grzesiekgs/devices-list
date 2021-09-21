@@ -4,7 +4,7 @@ import { ButtonProps } from './Button.types';
 import Styles from './button.module.scss';
 
 export const Button: FunctionComponent<ButtonProps> = ({ className, onClick, children }) => (
-  <button className={joinClasses(Styles.Button, className)} onClick={onClick}>
+  <button className={joinClasses(Styles.button, className)} onClick={onClick}>
     {children}
   </button>
 );

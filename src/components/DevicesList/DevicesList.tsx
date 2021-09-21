@@ -1,8 +1,8 @@
-import React, { Dispatch, FunctionComponent, SetStateAction, useCallback, useState } from 'react';
+import React, { Dispatch, FunctionComponent, SetStateAction } from 'react';
 import { IDevice } from 'types/devices';
+import { useResettableState } from 'src/utils/hooks';
 import { DeviceDetailsConnected, DeviceTile, Modal } from 'src/components';
 import { DevicesListProps } from './DevicesList.types';
-import { connector } from './DevicesList.connector';
 import Styles from './devicesList.module.scss';
 
 const renderDevice =
@@ -20,18 +20,16 @@ const renderDevice =
     );
 
 export const DevicesList: FunctionComponent<DevicesListProps> = ({ devices }) => {
-  const [viewedDevice, setViewedDevice] = useState<string | null>(null);
-  const handleCloseModal = useCallback(() => setViewedDevice(null), []);
+  const [viewedDevice, setViewedDevice, handleCloseModal] = useResettableState<string, null>(null);
+
   return (
     <>
       <ul className={Styles.devicesList}>{devices.map(renderDevice(setViewedDevice))}</ul>
       {viewedDevice ? (
-        <Modal isOpen={true} onClose={handleCloseModal}>
+        <Modal onClose={handleCloseModal}>
           <DeviceDetailsConnected deviceName={viewedDevice} />
         </Modal>
       ) : null}
     </>
   );
 };
-
-export const DevicesListConnected = connector(DevicesList);

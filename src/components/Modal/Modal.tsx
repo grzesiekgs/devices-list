@@ -1,15 +1,11 @@
 import ReactDOM from 'react-dom';
 import React, { FunctionComponent } from 'react';
 import elementIds from 'constants/elementsIds';
-import { Button } from 'src/components';
+import { Button, Courtain } from 'src/components';
 import { ModalProps } from './Modal.types';
 import Styles from './modal.module.scss';
 
-export const Modal: FunctionComponent<ModalProps> = ({ isOpen, onClose, children }) => {
-  if (!isOpen) {
-    return null;
-  }
-
+export const Modal: FunctionComponent<ModalProps> = ({ onClose, children }) => {
   const container = document.getElementById(elementIds.modalContainer);
 
   if (!container) {
@@ -19,10 +15,14 @@ export const Modal: FunctionComponent<ModalProps> = ({ isOpen, onClose, children
   }
 
   const modalElement = (
-    <div className={Styles.modal}>
-      <Button onClick={onClose}>CLOSE</Button>
-      {children}
-    </div>
+    <Courtain onClick={onClose}>
+      <div className={Styles.modal}>
+        <Button onClick={onClose} className={Styles.modal__close}>
+          CLOSE
+        </Button>
+        <div className={Styles.modal__content}>{children}</div>
+      </div>
+    </Courtain>
   );
 
   return ReactDOM.createPortal(modalElement, container);

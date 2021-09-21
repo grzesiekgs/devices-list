@@ -2,13 +2,13 @@ import { NextPage } from 'next';
 import React from 'react';
 import { reduxWrapper } from 'logic/store';
 import { DevicesActions } from 'logic/devices/actions';
-import { DevicesListConnected, PageLayout } from 'src/components';
+import { PageLayout, DevicesPage } from 'src/components';
 import { END } from '@redux-saga/core';
 import elementIds from 'constants/elementsIds';
 
 const IndexPage: NextPage = () => (
   <PageLayout>
-    <DevicesListConnected />
+    <DevicesPage />
     <div id={elementIds.modalContainer} />
   </PageLayout>
 );

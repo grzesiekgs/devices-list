@@ -1,10 +1,19 @@
+@import '~/src/styles/variables';
+
 .deviceTile {
   display: flex;
   flex-direction: column;
+  width: $image-width-small;
+  margin: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.125rem $grey-opaque;
+  border-radius: 0.5rem;
+  cursor: pointer;
 
   &__name {
   }
 
   &__image {
+    margin-top: auto;
+    width: $image-width-small;
   }
 }
