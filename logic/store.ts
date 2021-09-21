@@ -3,7 +3,6 @@ import { applyMiddleware, combineReducers, createStore, Middleware, Store } from
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
 import { aislesReducer } from './aisles/reducer';
-import { appReducer } from './app/reducer';
 import { devicesReducer } from './devices/reducer';
 import { initialState } from './initialState';
 import rootSaga from './rootSaga';
@@ -21,7 +20,6 @@ export const initializeStore = (): Store<RootState> => {
   const sagaMiddleware = createSagaMiddleware();
   const store = createStore(
     combineReducers<RootState>({
-      app: appReducer,
       devices: devicesReducer,
       aisles: aislesReducer
     }),

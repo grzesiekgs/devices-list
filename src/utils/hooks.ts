@@ -1,3 +1,4 @@
+// NOTE This file could be split into single hook per file as it grows.
 import { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { DevicesFiltersState, IDevice } from 'types/devices';
 import { CheckboxOnChange, InputOnChange, MultiSelectOnChange } from 'src/components';
@@ -56,7 +57,8 @@ export const useFilteredDevices = (
 
   return [filteredDevices, filters, setFilters];
 };
-
+// NOTE This hook could include debounce, in order to avoid rerendering spam while typing in search bar.
+// I had useDebounce hook in boilerplate project (I've removed it in last commit if You want to have a look on it), but I decided that it would be just too much.
 export const useFiltersState = <FiltersOnChange extends (filters: DevicesFiltersState) => void>(
   filters: DevicesFiltersState,
   onChange: FiltersOnChange

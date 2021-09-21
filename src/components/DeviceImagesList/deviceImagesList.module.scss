@@ -3,8 +3,7 @@
 .deviceImagesList {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: $image-width-medium;
+  width: 100%;
   // 1.25rem to take into account height of native browser scrollbar.
   height: calc(#{$image-height-medium} + 1.25rem);
   overflow-x: scroll;
