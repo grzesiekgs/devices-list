@@ -2,6 +2,9 @@ $white: #fff;
 $grey: #999;
 $grey-opaque: rgba(100, 100, 100, 0.5);
 $black: #111;
+$red: rgb(250, 110, 110);
+$yellow: rgb(224, 167, 82);
+$green: rgb(20, 240, 0);
 // width 982 height 726
 $image-width-small: 327px;
 $image-height-small: 242px;
@@ -9,4 +12,5 @@ $image-width-medium: 654px;
 $image-height-medium: 484px;
 
 $inputs-height: 1.5rem;
-$inputs-spacing: 0.5rem;
+$inputs-spacing: 0.25rem;
+$inputs-font-size: 0.875rem;

@@ -4,12 +4,18 @@
   display: flex;
   flex-direction: column;
   width: $image-width-small;
-  margin: 0.5rem;
+  margin: 1rem;
   box-shadow: 0 0 0.5rem 0.125rem $grey-opaque;
   border-radius: 0.5rem;
   cursor: pointer;
 
+  &__info {
+    padding: 0.5rem;
+  }
+
   &__name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
   }
 
   &__image {

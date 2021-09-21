@@ -26,7 +26,7 @@ export const DevicesList: FunctionComponent<DevicesListProps> = ({ devices }) =>
     <>
       <ul className={Styles.devicesList}>{devices.map(renderDevice(setViewedDevice))}</ul>
       {viewedDevice ? (
-        <Modal onClose={handleCloseModal}>
+        <Modal title={`DEVICE ${viewedDevice}`} onClose={handleCloseModal}>
           <DeviceDetailsConnected deviceName={viewedDevice} />
         </Modal>
       ) : null}

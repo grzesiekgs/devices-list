@@ -1,6 +1,37 @@
 @import '~/src/styles/variables';
 
 .batteryLevel {
-  border: 0.125rem solid $black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
   padding: 0.125rem;
+  margin: 0.25rem 0;
+  border: 0.125rem solid $black;
+  border-radius: 0.25rem;
+  font-size: $inputs-font-size;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -0.375rem;
+    width: 0.375rem;
+    height: 0.5rem;
+    background-color: $black;
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  &_low {
+    background-color: $red;
+  }
+
+  &_medium {
+    background-color: $yellow;
+  }
+
+  &_high {
+    background-color: $green;
+  }
 }

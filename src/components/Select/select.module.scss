@@ -1,0 +1,49 @@
+@import '~/src/styles/variables';
+
+.select {
+  position: relative;
+  height: $inputs-height;
+  margin: $inputs-spacing;
+
+  &__button {
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    border: 0.125rem solid $grey;
+    list-style: none;
+    background-color: $white;
+
+    &_open {
+      display: flex;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: $inputs-height;
+    margin: $inputs-spacing;
+    font-size: $inputs-font-size;
+    // border-bottom: 0.0625rem solid $grey-opaque;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}

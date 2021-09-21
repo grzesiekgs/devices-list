@@ -13,7 +13,7 @@ export const DevicesAPI = {
               ...device,
               // NOTE Hardcoded values just to mock API.
               otaVersion: '0.11.0',
-              batteryLevel: 100,
+              batteryLevel: 1,
               batteryVoltage: 4,
               latestStatusAt: new Date().toISOString(),
               latestImages: [],

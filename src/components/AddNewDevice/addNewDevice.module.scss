@@ -1,0 +1,12 @@
+.addNewDevice {
+  align-self: flex-start;
+
+  &__modal {
+    width: 23.125rem;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    align-self: center;
+  }
+}

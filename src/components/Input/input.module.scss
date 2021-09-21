@@ -7,6 +7,7 @@
   border-radius: 0.25rem;
   padding: 0 0 0 0.25rem;
   margin: $inputs-spacing;
+  font-size: $inputs-font-size;
 
   &:focus {
     outline-color: $grey;

@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
-import { AddNewDeviceButtonConnected, DevicesCatalogConnected } from 'src/components';
+import { AddNewDeviceConnected, DevicesCatalogConnected } from 'src/components';
 import Styles from './devicesPage.module.scss';
 
 export const DevicesPage: FunctionComponent = () => (
   <div className={Styles.devicesPage}>
-    <AddNewDeviceButtonConnected />
+    <AddNewDeviceConnected />
     <DevicesCatalogConnected />
   </div>
 );

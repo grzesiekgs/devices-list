@@ -11,11 +11,12 @@ export const useResettableState = <State, DefaultValue = State>(
   return [state, setState, resetState];
 };
 
-export const useToggle = (): [boolean, () => void, () => void] => {
+export const useToggle = (): [boolean, () => void, () => void, () => void] => {
   const [toggle, setToggle, toggleOff] = useResettableState<boolean>(false);
   const toggleOn = useCallback(() => setToggle(true), []);
+  const switchToggle = useCallback(() => setToggle((toggle) => !toggle), []);
 
-  return [toggle, toggleOn, toggleOff];
+  return [toggle, switchToggle, toggleOn, toggleOff];
 };
 
 type FilteringFunction = (device: IDevice) => boolean;
@@ -24,10 +25,12 @@ const filterByAisles =
   (selectedAisled: string[]): FilteringFunction =>
   ({ aisle }) =>
     selectedAisled.includes(aisle);
+
 const filterByBatteryLevel =
   (maxBatteryLevel: number): FilteringFunction =>
   ({ batteryLevel }) =>
     parseInt(String(batteryLevel * 100)) <= maxBatteryLevel;
+
 const filterBySearchQuery =
   (searchQuery: string): FilteringFunction =>
   ({ deviceName }) =>

@@ -2,5 +2,13 @@
 
 .deviceDetails {
   width: calc(#{$image-width-medium} + 2rem);
-  padding: 1rem;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info {
+    margin: 0.25rem 0;
+  }
 }

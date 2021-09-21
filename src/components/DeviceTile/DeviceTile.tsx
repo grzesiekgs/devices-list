@@ -1,9 +1,8 @@
 import React, { FunctionComponent, useCallback, useMemo } from 'react';
+import { IDeviceImage } from 'types/devices';
+import { BatteryLevel, DeviceImage } from 'src/components';
 import { DeviceTileProps } from './DeviceTile.types';
 import Styles from './deviceTile.module.scss';
-import { IDeviceImage } from 'types/devices';
-import { DeviceImage } from '../DeviceImage/DeviceImage';
-import { BatteryLevel } from '../BatteryLevel/BatteryLevel';
 
 const findLastImage = (images: IDeviceImage[]): IDeviceImage =>
   images.reduce<IDeviceImage>((lastImage, image) => {
@@ -28,11 +27,13 @@ export const DeviceTile: FunctionComponent<DeviceTileProps> = ({
 
   return (
     <li className={Styles.deviceTile} onClick={handleClick}>
-      <h4 className={Styles.deviceTile__name}>{deviceName}</h4>
-      <span className={Styles.deviceTile__aisle}>
-        Aisle: <b>{aisle}</b>
-      </span>
-      <BatteryLevel batteryLevel={batteryLevel} />
+      <div className={Styles.deviceTile__info}>
+        <h4 className={Styles.deviceTile__name}>{deviceName}</h4>
+        <span className={Styles.deviceTile__aisle}>
+          Aisle: <b>{aisle}</b>
+        </span>
+        <BatteryLevel batteryLevel={batteryLevel} />
+      </div>
       <DeviceImage {...lastImage} className={Styles.deviceTile__image} />
     </li>
   );

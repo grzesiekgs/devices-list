@@ -1,4 +1,5 @@
-import React, { FunctionComponent, useCallback, useState } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
+import { useToggle } from 'src/utils/hooks';
 import { conditionClass, joinClasses } from 'src/utils/classNames';
 import { Button, Checkbox, CheckboxOnChange } from 'src/components';
 import { MultiSelectProps } from './MultiSelect.types';
@@ -12,8 +13,7 @@ const renderItem = (selected: string[], onChange: CheckboxOnChange) => (item: st
   );
 
 export const MultiSelect: FunctionComponent<MultiSelectProps> = ({ label, items, selected, onChange }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const toggleDropdown = useCallback(() => setIsOpen((isOpen) => !isOpen), []);
+  const [isOpen, toggleDropdown] = useToggle();
   const handleItemChange = useCallback<CheckboxOnChange>(
     (value, checked) => {
       let newSelected: string[];
@@ -32,7 +32,7 @@ export const MultiSelect: FunctionComponent<MultiSelectProps> = ({ label, items,
   return (
     <div className={joinClasses(Styles.multiSelect, conditionClass(isOpen, Styles.multiSelect_open))}>
       <Button className={Styles.multiSelect__button} onClick={toggleDropdown}>
-        {label}
+        {label} ▼
       </Button>
       <ul className={joinClasses(Styles.multiSelect__list, conditionClass(isOpen, Styles.multiSelect__list_open))}>
         {items.map(renderItem(selected, handleItemChange))}

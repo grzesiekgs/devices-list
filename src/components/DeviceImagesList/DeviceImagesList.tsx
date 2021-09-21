@@ -9,5 +9,5 @@ const renderDeviceImage = (image: IDeviceImage) => (
 );
 
 export const DeviceImagesList: FunctionComponent<DeviceImagesListProps> = ({ images }) => (
-  <ul className={Styles.deviceImagesList}>{images.map(renderDeviceImage)}</ul>
+  <ul className={Styles.deviceImagesList}>{images.length ? images.map(renderDeviceImage) : 'No Images'}</ul>
 );
